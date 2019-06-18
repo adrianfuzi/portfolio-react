@@ -1,0 +1,58 @@
+.footer {
+    width: 100%;
+    min-height: 24rem;
+    background-color: var(--color-grey-dark-1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @media only screen and (min-width: $bp-large) {
+        display: none;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        min-height: 30rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        min-height: 27rem;
+    }
+
+    ////////////////////! / FOOTER - SOCIAL / !///////////////////
+
+    &__social {
+        margin-top: 3rem;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+
+        // @media only screen and (max-width: $bp-large) {
+        // } 
+
+        &-item {
+            width: 3.5rem;
+            padding: .3rem;
+
+            &-svg {
+                transition: all 0.2s ease;
+                fill: var(--color-grey-light-3);
+            }
+            &-svg:hover {
+                fill: var(--color-primary);
+            }
+        }
+
+        &-item:hover {
+            cursor: pointer;
+        } 
+    }
+
+    &__legal {
+        font-size: 1.2rem;
+        color: var(--color-grey-dark-4);
+        text-align: center;
+        padding: 2.5rem;
+    }
+
+}

@@ -1,0 +1,74 @@
+.page {
+    background: grey;
+    background-image: linear-gradient(
+        to right bottom, rgba(255, 255, 255, 0.92), 
+                         rgba(216, 216, 216, 0.92)),
+                            url(../assets/images/background.jpg);
+    // background-size: contain;
+    height: fit-content;
+    // height: 145rem;
+
+    // clip-path: polygon(0 15% , 100% 0, 100% 85%, 0 100%);
+
+    flex: 1;
+    // justify-content: center;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-largest) {
+        background-size: contain;
+    }
+
+    // @media only screen and (max-width: $bp-large) {
+    //     clip-path: none;
+    //     width: 100%;
+    // }
+
+    // @media only screen and (max-width: $bp-sm-medium) {
+    //     min-height: fit-content;
+    //     width: 100%;
+    //     align-self: center;
+    // }
+}
+
+.content {
+    padding: 17rem;
+    // margin: 12rem 0 0 20.8rem;
+
+    animation-name: moveInLeft;
+    animation-duration: .7s;
+
+    @media only screen and (max-width: $bp-large) {
+        text-align: center;
+        padding: 10rem 5rem;
+    }
+
+    &__title {
+        font-size: 7rem;
+        font-weight: 300;
+        color: var(--color-grey-dark-1);
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        color: var(--color-grey-dark-1);
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-large) {
+            text-align: justify;
+        }
+    }
+}
+
+.moveInRight {
+    @media only screen and (min-width: $bp-largest) {
+        animation-name: moveInRightLess;
+        animation-duration: .7s;
+    }
+}
+
+.moveInLeft {
+    @media only screen and (min-width: $bp-largest) {
+        animation-name: moveInLeftLess;
+        animation-duration: .7s;
+    }
+}

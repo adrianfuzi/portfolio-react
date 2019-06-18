@@ -1,0 +1,128 @@
+.page-contact {
+    background-size: cover;
+    // height: fit-content;
+
+    @media only screen and (max-width: $bp-large) {
+        // min-height: fit-content;
+        background-size: contain;
+        background-image: linear-gradient(
+        to right bottom, rgba(255, 255, 255, 0.95), 
+                            rgba(216, 216, 216, 0.95)),
+                            url(../assets/images/background.jpg);
+    }
+
+    // clip-path: polygon(0 15% , 100% 0, 100% 85%, 0 100%);
+
+    // @media only screen and (max-width: $bp-largest) {
+    //     background-size: contain;
+    // }
+
+    // @media only screen and (max-width: $bp-large) {
+    //     clip-path: none;
+    //     width: 100%;
+    // }
+
+    // @media only screen and (max-width: $bp-sm-medium) {
+    //     min-height: fit-content;
+    //     width: 100%;
+    //     align-self: center;
+    // }
+}
+
+.content-contact {
+    margin: 0rem 0 0 20.8rem;
+    padding: 11rem 16rem;
+
+    @media only screen and (max-width: $bp-large) {
+        margin: 15rem 0 0 0rem;
+        padding: 10rem 5rem;
+    }
+
+    @media only screen and (max-width: $bp-sm-medium) {
+        padding: 10rem 5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem 5rem;
+    }
+
+    // @media only screen and (max-width: $bp-sm-medium) {
+    //     text-align: center;
+    // }
+
+    // &__title {
+    //     font-size: 7rem;
+    //     font-weight: 300;
+    //     color: var(--color-grey-dark-1);
+    // }
+
+    // &__text {
+    //     font-size: 1.8rem;
+    //     color: var(--color-grey-dark-1);
+    //     margin-bottom: 2rem;
+
+    //     @media only screen and (max-width: $bp-sm-medium) {
+    //         text-align: justify;
+    //     }
+    // }
+}
+
+//////////////////! / CONTACT FORM / !///////////////////
+
+.form {
+    
+    &__group {
+        margin-bottom: .5rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1rem 2rem;
+        border-radius: 2px;
+        background-color: #fff;
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 65%;
+
+        
+        
+        @media only screen and (max-width: $bp-largest) {
+            width: 100%;
+        }
+        
+        @media only screen and (max-width: $bp-large) {
+            text-align: center;
+        }
+        
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem var(--color-grey-dark-3);
+            border-bottom: 3px solid var(--color-primary-light);
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid var(--color-secondary);
+        }
+
+        &::-webkit-input-placeholder {
+            color: var(--color-grey-dark-3);
+        }
+    }
+
+    &__label {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-3.8rem);
+    }
+}

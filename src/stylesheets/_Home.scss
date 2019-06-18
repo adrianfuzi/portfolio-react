@@ -1,0 +1,66 @@
+.page-home {
+    background-size: cover;
+    height: 100vh;
+
+    @media only screen and (max-width: $bp-large) {
+        // min-height: fit-content;
+        background-size: contain;
+        background-image: linear-gradient(
+        to right bottom, rgba(255, 255, 255, 0.95), 
+                            rgba(216, 216, 216, 0.95)),
+                            url(../assets/images/background.jpg);
+    }
+
+    // clip-path: polygon(0 15% , 100% 0, 100% 85%, 0 100%);
+
+    // @media only screen and (max-width: $bp-largest) {
+    //     background-size: contain;
+    // }
+
+    // @media only screen and (max-width: $bp-large) {
+    //     clip-path: none;
+    //     width: 100%;
+    // }
+
+    // @media only screen and (max-width: $bp-sm-medium) {
+    //     min-height: fit-content;
+    //     width: 100%;
+    //     align-self: center;
+    // }
+}
+
+.content-home {
+    margin: 9rem 0 0 20.8rem;
+
+    @media only screen and (max-width: $bp-large) {
+        margin: 15rem 0 0 0rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 10rem 5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem 5rem;
+    }
+
+    // @media only screen and (max-width: $bp-sm-medium) {
+    //     text-align: center;
+    // }
+
+    // &__title {
+    //     font-size: 7rem;
+    //     font-weight: 300;
+    //     color: var(--color-grey-dark-1);
+    // }
+
+    // &__text {
+    //     font-size: 1.8rem;
+    //     color: var(--color-grey-dark-1);
+    //     margin-bottom: 2rem;
+
+    //     @media only screen and (max-width: $bp-sm-medium) {
+    //         text-align: justify;
+    //     }
+    // }
+}
