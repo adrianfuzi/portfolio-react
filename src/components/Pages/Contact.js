@@ -4,11 +4,12 @@ const contact = () => {
 
         return (
                 <main className="page page-contact" id="contact">
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="content content-contact">
                         <div className="content__title">Contact</div>
                             <p className="content__text">Feel free to contact me through the email below, or fill out the form and send me a message.<br></br></p>
                             <p className="link__email"><a className="link" href="mailto:adfuezi@gmail.com">adfuezi@gmail.com</a></p>
-                        <form method="POST" data-netlify="true" className="form">
+                        <form name="contact" method="POST" className="form">
                             <div className="form__group">
                                 <input type="text" className="form__input" placeholder="Your Name" name="name" id="name" required></input>
                                 <label htmlFor="name" className="form__label">Your Name</label>
