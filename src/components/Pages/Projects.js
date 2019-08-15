@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 
 import mantau from '../../assets/images/man-tau.jpg';
-import portfolio from '../../assets/images/portfolio.jpg'
-import budget from '../../assets/images/budget.jpg'
+import portfolio from '../../assets/images/portfolio.jpg';
+import budget from '../../assets/images/budget.jpg';
+import recipe from '../../assets/images/recipe.jpg';
 
 const Projects = (props) => {
 
@@ -24,6 +25,17 @@ const Projects = (props) => {
                             </a>
                         </figure>
                         <span className="projects__code"><a className="link" href="https://github.com/adrianfuzi/the-man-tau" target="_blank" rel="noopener noreferrer">&lt; Check out the code on GitHub &#47;&gt;</a></span>
+                    </div>
+
+                    <div className="projects">
+                        <figure className="projects__item">
+                            <img src={recipe} alt="Recipe App" className="projects__photo"></img>
+                            <a href="https://adrianfuzi-recipe.netlify.com/" target="_blank" rel="noopener noreferrer" className="projects__overlay" onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+                                <p className={`projects__heading ${hover ? 'moveInLeft' : ''}`}>Recipe App</p><hr className="projects__line"></hr>
+                                <p className={`projects__description ${hover ? 'moveInRight' : ''}`}>API powered recipe app (Desktop App).<br></br>Built with: HTML, Sass, JavaScript<br></br><br></br><span className="projects__heading-visit">Click to visit website</span></p>
+                            </a>
+                        </figure>
+                        <span className="projects__code"><a className="link" href="https://github.com/adrianfuzi/recipe_app" target="_blank" rel="noopener noreferrer">&lt; Check out the code on GitHub &#47;&gt;</a></span>
                     </div>
 
                     <div className="projects">
