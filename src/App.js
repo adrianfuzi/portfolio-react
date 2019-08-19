@@ -103,7 +103,11 @@ const App = () => {
               // Button to projects
               navTo='./projects' 
               navName='My Projects' 
-              click={projectsActiveHandler}/>}/>
+              click={projectsActiveHandler}
+              
+              link={'./contact'} 
+              clickLink={contactActiveHandler}
+              linkName={' contact me'}/>}/>/>}/>
 
             <Route path="/projects" render={(props) => <Projects {...props} 
               // Button to contact
