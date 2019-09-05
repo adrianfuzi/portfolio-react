@@ -3,7 +3,7 @@
     height: calc(100vh + 10rem);
 
     @media only screen and (max-width: $bp-large) {
-        height: 100vh;
+        height: fit-content;
         background-size: contain;
         background-image: linear-gradient(
         to right bottom, rgba(255, 255, 255, 0.95), 

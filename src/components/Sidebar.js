@@ -1,6 +1,7 @@
 import React from 'react'
 
 import profile from '../assets/images/profile.jpg'
+import resume from '../assets/cv_adrian_fuzi.pdf'
 
 const sidebar = (props) => {
         return (
@@ -17,7 +18,7 @@ const sidebar = (props) => {
                     {props.contact}
                 </ul>
 
-                <a className="resume" href="../../public/cv_adrian_fuzi.pdf" download><svg className="resume__icon" width="36" height="44" viewBox="0 0 36 44" fill="none">
+                <a className="resume" href={resume} download><svg className="resume__icon" width="36" height="44" viewBox="0 0 36 44" fill="none">
                             <path d="M18 37L29.2583 20.5H6.74167L18 37Z" stroke="#ccc"/>
                             <rect x="0.5" y="0.5" width="35" height="43" rx="1.5" stroke="#ccc"/>
                             <line x1="5" y1="6.5" x2="31" y2="6.5" stroke="#ccc"/>
